@@ -1,0 +1,20 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["interactiveTransactions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Employee {
+  id                              Int               @id @default(autoincrement()) 
+  first_name                      String               @db.VarChar(255)
+  last_name                       String?              @db.VarChar(255)
+  email                           String?              @db.VarChar(255)
+  number                          String               @db.VarChar(255)
+  gender                          String?              @db.VarChar(255)
+  photo                           String?              @db.VarChar(255)
+}
+
