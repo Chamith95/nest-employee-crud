@@ -83,3 +83,5 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+Swagger should be available in http://localhost:3005/employees/swagger
